@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.js" charset="utf-8"></script>
+  <style media="screen">
+    *{margin:0;padding:0;}
+    .carousel{position: relative;background: #eee;width: 50%;height:200px;margin:0 auto;}
+    .pics{width: 100%;height: 200px;overflow:hidden;}
+    .pics a{display: block;width: 100%;height:200px;color: #000;}
+  </style>
+  <!--
+   load
+   -->
+  <script type="text/javascript">
+    window.onload = function(){
+      var carousel = document.getElementById('carousel');
+          var pics = carousel.getElementsByClassName('pics')[0];
+
+          console.log(pics.getElementsByTagName('a')[0]);
+    }
+  </script>
+</head>
+<body>
+  <div id="carousel" class="carousel">
+    <div class="pics">
+      <a href="#" title="1111" style="background: #ccc;">1</a>
+      <a href="#" title="2222" style="background: #999;">2</a>
+      <a href="#" title="3333" style="background: #666;">3</a>
+    </div>
+  </div>
+</body>
+</html>
