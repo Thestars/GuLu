@@ -8,30 +8,30 @@
   <style>
     *{margin:0;padding:0;}
     a{text-decoration: none;}ul{list-style:none;}
-    .cl:before{clear: both;display: table;content: '';}
+    .cl:before{clear: both;display: table;content:'';}
+    .cl:after{clear: both;display: table;content:'';}
     .m-tab{width:400px;}
     .m-tab .m-tab-title{border-bottom: 1px solid #ddd;margin-bottom: 15px;}
     /*.m-tab .m-tab-title:before{display: table;content: '';}*/
-    .m-tab .m-tab-title:after{display: table;content:'';clear:both;}
     .m-tab .m-tab-title .m-tab-btn{float: left;position: relative;display: block;}
     .m-tab .m-tab-title .m-tab-btn a{line-height:1.42857143;padding:10px 15px;display: block;}
     .m-tab .m-tab-content{position:relative;height: 100px;overflow: hidden;}
-    .m-tab .m-tab-content .item{min-height:100px;position: relative;background: #ccc;}
+    .m-tab .m-tab-content .item{min-height:100px;position: relative;}
   </style>
 </head>
 <body>
   <div m-role="tab" class="m-tab">
     <div class="m-tab-title">
-      <ul class="m-nav-tabs">
+      <ul class="m-nav-tabs cl">
         <li class="m-tab-btn"><a href="#item1">tab1</a></li>
         <li class="m-tab-btn"><a href="#item2">tab2</a></li>
         <li class="m-tab-btn"><a href="#item3">tab3</a></li>
       </ul>
     </div>
     <div class="m-tab-content">
-      <div class="item" name="item1" style="background:#333;"></div>
-      <div class="item" name="item2" style="background:#666;"></div>
-      <div class="item" name="item3" style="background:#999;"></div>
+      <div class="item" id="item1">Item 1</div>
+      <div class="item" id="item2">Item 2</div>
+      <div class="item" id="item3">Item 3</div>
     </div>
   </div>
 </body>
