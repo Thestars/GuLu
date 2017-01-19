@@ -1,0 +1,22 @@
+{
+  "name": "tab",
+  "version": "0.0.1",
+  "description": "Tab module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Thestars/GuLu.git"
+  },
+  "keywords": [
+    "tab"
+  ],
+  "author": "TheStars",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Thestars/GuLu/issues"
+  },
+  "homepage": "https://github.com/Thestars/GuLu#readme"
+}
