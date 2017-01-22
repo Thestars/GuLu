@@ -1,11 +1,21 @@
-define(function() {
-  function UI_Tab(s) {
-    this.init.apply(this,s)
+define(['jquery'],function($) {
+  'use strict';
+  function Tab() {
+    this.init.apply(this,arguments)
   }
-  UI_Tab.prototype = {
-    init:function(s) {
-      console.log(s.ele);
+  Tab.prototype = {
+    init:function(opt){
+      var tabEle  = $('[m-role="tab"]') || null,
+          tabBtn  = tabEle.children('[m-role = tabBtn]'),
+          tabCont = tabEle.children('[m-role = tabCont]');
+      if (tabEle) {
+        console.dir(tabEle);
+      }
+
+    },
+    item:function() {
+
     }
   };
-  return new tab;
+  return Tab;
 })
