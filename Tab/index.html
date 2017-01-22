@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <script src="js/lib/require.js" data-main="js/index" charset="utf-8"></script>
   <style>
     *{margin:0;padding:0;}
     a{text-decoration: none;}ul{list-style:none;}
@@ -12,15 +13,14 @@
     .cl:after{clear: both;display: table;content:'';}
     .m-tab{width:400px;}
     .m-tab .m-tab-title{border-bottom: 1px solid #ddd;margin-bottom: 15px;}
-    /*.m-tab .m-tab-title:before{display: table;content: '';}*/
-    .m-tab .m-tab-title .m-tab-btn{float: left;position: relative;display: block;}
+    .m-tab .m-tab-title .m-tab-btn{float: left;display: block;}
     .m-tab .m-tab-title .m-tab-btn a{line-height:1.42857143;padding:10px 15px;display: block;}
-    .m-tab .m-tab-content{position:relative;height: 100px;overflow: hidden;}
+    .m-tab .m-tab-content{}
     .m-tab .m-tab-content .item{min-height:100px;position: relative;}
   </style>
 </head>
 <body>
-  <div m-role="tab" class="m-tab">
+  <div m-role="tab" class="m-tab" id="tab">
     <div class="m-tab-title">
       <ul class="m-nav-tabs cl">
         <li class="m-tab-btn"><a href="#item1">tab1</a></li>
@@ -29,9 +29,23 @@
       </ul>
     </div>
     <div class="m-tab-content">
-      <div class="item" id="item1">Item 1</div>
-      <div class="item" id="item2">Item 2</div>
-      <div class="item" id="item3">Item 3</div>
+      <div class="item" id="item1" style="background: #ddd;">Item 1</div>
+      <div class="item" id="item2" style="background: #eee;">Item 2
+        <br>
+        <br>33333
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>111
+        11
+        <br>2222
+        <br>
+        <br>
+      </div>
+      <div class="item" id="item3" style="background: #aaa;">Item 3</div>
     </div>
   </div>
 </body>
