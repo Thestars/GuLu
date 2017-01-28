@@ -1,7 +1,7 @@
 'use strict';
 require.config({
   paths:{
-    "jquery":["lib/jquery"],
+    "jquery":["http://cdn.bootcss.com/jquery/1.11.3/jquery.min","lib/jquery"],
     "ui-tab":["module/tab"]
   }
 })

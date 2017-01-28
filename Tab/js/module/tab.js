@@ -6,10 +6,10 @@ define(['jquery'],function($) {
   Tab.prototype = {
     init:function(opt){
       var tabEle  = $('[m-role="tab"]') || null,
-          tabBtn  = tabEle.children('[m-role = tabBtn]'),
-          tabCont = tabEle.children('[m-role = tabCont]');
+          tabBtn  = tabEle.find('[m-role = tabBtn]'),
+          tabCont = tabEle.find('[m-role = tabCont]');
       if (tabEle) {
-        console.dir(tabEle);
+        
       }
 
     },
