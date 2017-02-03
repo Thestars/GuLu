@@ -7,6 +7,6 @@ require.config({
 })
 require(["ui-tab"],function(obj) {
   var tab = new obj({
-    
+    first:1
   })
 })
